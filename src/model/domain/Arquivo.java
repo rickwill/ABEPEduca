@@ -6,16 +6,15 @@
 package model.domain;
 
 /**
- *
  * @author Richard
  */
-public class Arquivo {
- 
-	public Arquivo() {
+public class Arquivo
+{
+    //Atributos
+    //
+    public Arquivo(){}
 	 
-	}
-	 
-	public void criarArquivo() {
+    public void criarArquivo() {
 	 
 	}
 	 

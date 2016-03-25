@@ -6,7 +6,6 @@
 package model.domain;
 
 /**
- *
  * @author Richard
  */
 public class Atividade extends Arquivo {

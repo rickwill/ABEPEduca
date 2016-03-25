@@ -5,47 +5,50 @@
  */
 package model.domain;
 
+import java.util.Objects;
+
 /**
- *
  * @author Richard
  */
-public class Aluno extends Pessoa {
- 
-	private String registroAluno;
-	 
-	private String curso;
-	 
-	private Turma turma;
-	 
-	private String semestre;
-	 
-	private int indentificadorAluno;
-	 
-	private Usuario usuario;
-	 
-	private Instituicao instituicao;
-	 
-	private Turma turma;
-	 
-	private Disciplina disciplina;
-	 
-	private Time time;
-	 
-	public Aluno() {
-	 
-	}
-	 
-	public void criar forum()
-        { 
-	}
-	 
-	public void excluir conta() {
-	 
-	}
-	 
-	public void adicionar anexos() {
-	 
-	}
-	 
+public class Aluno extends Pessoa
+{
+    //Atributos
+    private String registroAluno;
+    private String curso;
+    private Turma turma;
+    private Usuario usuario;
+    private Instituicao instituicao;
+    
+    //Getters e Setters
+    //Construtor
+    public Aluno(){}
+    //Metodos
+    public void criarforum(){}
+    public void excluirconta(){}
+    public void adicionaranexos(){}
+    
+    //Equals e Hashcodes
+
+    @Override
+    public int hashCode() {
+        int hash = 5;
+        hash = 19 * hash + Objects.hashCode(this.registroAluno);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Aluno other = (Aluno) obj;
+        if (!Objects.equals(this.registroAluno, other.registroAluno)) {
+            return false;
+        }
+        return true;
+    }
+    
 }
- 
