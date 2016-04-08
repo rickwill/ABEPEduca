@@ -9,11 +9,7 @@ public class Time {
 	private Professor professor;
 	 
 	private Disciplina disciplina;
-	 
-	private Disciplina disciplina;
-	 
-	private Aluno aluno;
-	 
+	 	 	 
 	public Time() {
 	 
 	}

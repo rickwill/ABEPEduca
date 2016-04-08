@@ -9,9 +9,7 @@ public class Professor extends Pessoa {
 	private Instituicao instituicao;
 	 
 	private Usuario usuario;
-	 
-	private Instituicao instituicao;
-	 
+	 	 
 	private Turma turma;
 	 
 	private Disciplina disciplina;

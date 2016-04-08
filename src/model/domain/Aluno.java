@@ -16,15 +16,7 @@ public class Aluno extends Pessoa {
 	 
 	private Usuario usuario;
 	 
-	private Instituicao instituicao;
-	 
-	private Turma turma;
-	 
 	private Disciplina disciplina;
-	 
-	private Time time;
-	 
-	private Time time;
 	 
 	public Aluno() {
 	 

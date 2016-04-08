@@ -13,21 +13,13 @@ public class Disciplina {
 	private Turma turma;
 	 
 	private Disciplina disciplina;
-	 
-	private Disciplina disciplina;
-	 
-	private Turma turma;
-	 
+	 	 
 	private Professor professor;
 	 
 	private Aluno aluno;
 	 
 	private Time time;
-	 
-	private Turma turma;
-	 
-	private Time time;
-	 
+	 	 	 
 	public Disciplina() {
 	 
 	}

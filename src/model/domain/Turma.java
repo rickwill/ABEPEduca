@@ -13,9 +13,7 @@ public class Turma {
 	private Disciplina disciplina;
 	 
 	private Curso curso;
-	 
-	private Disciplina disciplina;
-	 
+	 	 
 	public void Turma() {
 	 
 	}
