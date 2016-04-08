@@ -1,16 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- *
- * @author Richard
- */
+import java.util.List;
+
 public class Chat {
  
+	private int idChat;
+	 
+	private List<Usuario> integrantes;
+	 
+	private Mensagem mensagem;
+	 
+	private Pessoa pessoa;
+	 
 	public Chat() {
 	 
 	}
@@ -20,22 +21,6 @@ public class Chat {
 	}
 	 
 	public void fecharChat() {
-	 
-	}
-	 
-	public void enviarMensagem() {
-	 
-	}
-	 
-	public void visualizarMensagem() {
-	 
-	}
-	 
-	public void apagarMensagem() {
-	 
-	}
-	 
-	public void denunciarSpam() {
 	 
 	}
 	 

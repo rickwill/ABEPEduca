@@ -1,42 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- *
- * @author Richard
- */
 public class Curso {
  
+	private int idCurso;
+	 
+	private String area;
+	 
+	private String Instituicao;
+	 
+	private Instituicao instituicao;
+	 
+	private Turma turma;
+	 
 	public Curso() {
 	 
 	}
 	 
-	public void cadastrarCurso() {
-	 
+	public boolean cadastrarCurso() {
+		return false;
 	}
 	 
 	public void editarCurso() {
 	 
 	}
 	 
-	public void excluirCurso() {
-	 
+	public boolean excluirCurso() {
+		return false;
 	}
 	 
-	public void buscarCurso() {
-	 
+	public Curso buscarCurso() {
+		return null;
 	}
 	 
-	public void matricularEmCurso() {
-	 
+	public boolean matricularEmCurso() {
+		return false;
 	}
 	 
-	public void excluirMatricula() {
-	 
+	public boolean excluirMatriculaCurso() {
+		return false;
 	}
 	 
 }

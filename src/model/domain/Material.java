@@ -1,23 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- *
- * @author Richard
- */
 public class Material extends Arquivo {
  
 	private String conteudo;
 	 
 	private String materia;
-	 
-	private Disciplina disciplina;
-	 
-	private Disciplina disciplina;
 	 
 	private Atividade atividade;
 	 
@@ -25,24 +12,24 @@ public class Material extends Arquivo {
 	 
 	}
 	 
-	public void cadastrarMaterial() {
-	 
+	public boolean cadastrarMaterial() {
+		return false;
 	}
 	 
-	public void enviarMaterial() {
-	 
+	public boolean enviarMaterial() {
+		return false;
 	}
 	 
-	public void obterMaterial() {
-	 
+	public boolean obterMaterial() {
+		return false;
 	}
 	 
 	public void editarMaterial() {
 	 
 	}
 	 
-	public void excluirMaterial() {
-	 
+	public boolean excluirMaterial() {
+		return false;
 	}
 	 
 }

@@ -1,14 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- *
- * @author Richard
- */
 public class Instituicao {
  
 	private String nome;
@@ -23,28 +14,32 @@ public class Instituicao {
 	 
 	private String email;
 	 
+	private int idInstituicao;
+	 
 	private Aluno aluno;
 	 
 	private Professor professor;
+	 
+	private Curso curso;
 	 
 	public Instituicao() {
 	 
 	}
 	 
-	public void cadastrarInstituicao() {
-	 
+	public boolean cadastrarInstituicao() {
+		return false;
 	}
 	 
 	public void editarInstituicao() {
 	 
 	}
 	 
-	public void buscarInstituicao() {
-	 
+	public Instituicao buscarInstituicao() {
+		return null;
 	}
 	 
-	public void excluirInstituicao() {
-	 
+	public boolean excluirInstituicao() {
+		return false;
 	}
 	 
 }

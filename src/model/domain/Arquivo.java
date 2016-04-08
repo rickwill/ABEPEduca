@@ -1,45 +1,43 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- * @author Richard
- */
-public class Arquivo
-{
-    //Atributos
-    //
-    public Arquivo(){}
+public class Arquivo {
+ 
+	private int idArquivo;
 	 
-    public void criarArquivo() {
+	private String tipo;
+	 
+	private Mensagem mensagem;
+	 
+	public Arquivo() {
 	 
 	}
 	 
-	public void enviarArquivo() {
+	public boolean criarArquivo() {
+		return false;
+	}
 	 
+	public boolean enviarArquivo() {
+		return false;
 	}
 	 
 	public void editarArquivo() {
 	 
 	}
 	 
-	public void excuirArquivo() {
-	 
+	public boolean excuirArquivo() {
+		return false;
 	}
 	 
-	public void buscarArquivo() {
-	 
+	public Arquivo buscarArquivo() {
+		return null;
 	}
 	 
-	public void baixarArquivo() {
-	 
+	public boolean baixarArquivo() {
+		return false;
 	}
 	 
-	public void adicionarArquivo() {
-	 
+	public boolean adicionarArquivo() {
+		return false;
 	}
 	 
 }

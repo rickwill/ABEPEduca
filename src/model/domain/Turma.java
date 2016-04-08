@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- *
- * @author Richard
- */
 public class Turma {
  
-	private int id;
+	private int idTurma;
 	 
 	private String nome;
 	 
@@ -21,26 +12,28 @@ public class Turma {
 	 
 	private Disciplina disciplina;
 	 
-	private Time time;
+	private Curso curso;
+	 
+	private Disciplina disciplina;
 	 
 	public void Turma() {
 	 
 	}
 	 
-	public void cadastrarTurma() {
-	 
+	public boolean cadastrarTurma() {
+		return false;
 	}
 	 
 	public void editarTurma() {
 	 
 	}
 	 
-	public void excluirTurma() {
-	 
+	public boolean excluirTurma() {
+		return false;
 	}
 	 
-	public void buscarTurma() {
-	 
+	public Turma buscarTurma() {
+		return null;
 	}
 	 
 }

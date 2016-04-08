@@ -1,16 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- * @author Richard
- */
 public class Atividade extends Arquivo {
  
 	private int exercicio;
+	 
+	private Material materialRelacionado;
 	 
 	private Material material;
 	 
@@ -18,28 +12,28 @@ public class Atividade extends Arquivo {
 	 
 	}
 	 
-	public void cadastrarAtividade() {
-	 
+	public boolean cadastrarAtividade() {
+		return false;
 	}
 	 
-	public void enviarAtividade() {
-	 
+	public boolean enviarAtividade() {
+		return false;
 	}
 	 
-	public void obterAtividade() {
-	 
+	public boolean obterAtividade() {
+		return false;
 	}
 	 
 	public void editarAtividade() {
 	 
 	}
 	 
-	public void buscarAtividade() {
-	 
+	public Atividade buscarAtividade() {
+		return null;
 	}
 	 
-	public void excluirAtividade() {
-	 
+	public boolean excluirAtividade() {
+		return false;
 	}
 	 
 }

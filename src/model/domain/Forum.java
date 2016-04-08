@@ -1,46 +1,49 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- *
- * @author Richard
- */
 public class Forum {
  
-	public void Forum() {
+	private int idForum;
+	 
+	private String titulo;
+	 
+	private int usuariosParticipando;
+	 
+	private int pontuacao;
+	 
+	private int curtidas;
+	 
+	private int comentarios;
+	 
+	private Post post;
+	 
+	private Pessoa pessoa;
+	 
+	public Forum() {
 	 
 	}
 	 
-	public void adicionarPergunta() {
+	public boolean criarForum() {
+		return false;
+	}
+	 
+	public void editarForum() {
 	 
 	}
 	 
-	public void excluirPergunta() {
-	 
+	public boolean excluirForum() {
+		return false;
 	}
 	 
-	public void EditarPergunta() {
-	 
+	public Forum buscarForum() {
+		return null;
 	}
 	 
-	public void comentarPergunta() {
-	 
+	public boolean curtirForum() {
+		return false;
 	}
 	 
-	public void responderPergunta() {
-	 
-	}
-	 
-	public void pontuarPergunta() {
-	 
-	}
-	 
-	public void pontuarResposta() {
-	 
+	public boolean comentarForum() {
+		return false;
 	}
 	 
 }

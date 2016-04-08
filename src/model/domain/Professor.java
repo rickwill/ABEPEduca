@@ -1,19 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package model.domain;
+package Model;
 
-/**
- *
- * @author Richard
- */
 public class Professor extends Pessoa {
  
 	private String registroMatricula;
 	 
-	private int attribute0;
+	private Disciplina disciplinaLecionada;
+	 
+	private Instituicao instituicao;
 	 
 	private Usuario usuario;
 	 
@@ -26,26 +19,6 @@ public class Professor extends Pessoa {
 	private Time time;
 	 
 	public Professor() {
-	 
-	}
-	 
-	public void adicionar material() {
-	 
-	}
-	 
-	public void criar materia() {
-	 
-	}
-	 
-	public void lan�ar nota de alunos() {
-	 
-	}
-	 
-	public void excluir () {
-	 
-	}
-	 
-	public void alterar() {
 	 
 	}
 	 
