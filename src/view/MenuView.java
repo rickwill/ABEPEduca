@@ -5,6 +5,8 @@
  */
 package view;
 
+import java.beans.PropertyVetoException;
+
 /**
  *
  * @author Marcielli
@@ -19,9 +21,26 @@ public class MenuView extends javax.swing.JFrame {
     
         this.setExtendedState(MAXIMIZED_BOTH);    
                 
-        PaginaInicial mostrarInicio = new PaginaInicial();
-        desktopPane.add(mostrarInicio);
-        mostrarInicio.show();
+
+//        PaginaInicial mostrarInicio = new PaginaInicial();
+//        desktopPane.add(mostrarInicio);
+//        mostrarInicio.show();
+//         try {
+//             mostrarInicio.setMaximum(true);
+//                } catch (PropertyVetoException ex) {
+//        }
+
+        //Teste
+        Login mostrarLogin = new Login();
+        desktopPane.add(mostrarLogin);
+        mostrarLogin.show();
+         try {
+             mostrarLogin.setMaximum(true);
+                } catch (PropertyVetoException ex) {
+        }
+        //Fim Teste
+
+
         
     }
     
