@@ -20,27 +20,7 @@ public class MenuView extends javax.swing.JFrame {
         initComponents();
     
         this.setExtendedState(MAXIMIZED_BOTH);    
-                
-
-//        PaginaInicial mostrarInicio = new PaginaInicial();
-//        desktopPane.add(mostrarInicio);
-//        mostrarInicio.show();
-//         try {
-//             mostrarInicio.setMaximum(true);
-//                } catch (PropertyVetoException ex) {
-//        }
-
-        //Teste
-        Login mostrarLogin = new Login();
-        desktopPane.add(mostrarLogin);
-        mostrarLogin.show();
-         try {
-             mostrarLogin.setMaximum(true);
-                } catch (PropertyVetoException ex) {
-        }
-        //Fim Teste
-
-
+               
         
     }
     
@@ -56,8 +36,172 @@ public class MenuView extends javax.swing.JFrame {
     private void initComponents() {
 
         desktopPane = new javax.swing.JDesktopPane();
+        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jPanel1 = new javax.swing.JPanel();
+        btnEntrar = new javax.swing.JButton();
+        btnCadastrar = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jLabelGifPaginaInicial = new javax.swing.JLabel();
+        jPanelTopoPaginaInicial = new javax.swing.JPanel();
+        lbTopoPaginaInicial = new javax.swing.JLabel();
+        jLabelTopoPaginaInicial = new javax.swing.JLabel();
+        jLabelImgTopoPaginaInicial = new javax.swing.JLabel();
+        jPanelRodapePaginaInicial = new javax.swing.JPanel();
+        jLabelRodapePaginaInicial = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jInternalFrame1.setBackground(new java.awt.Color(255, 255, 255));
+        jInternalFrame1.setVisible(true);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        btnEntrar.setBackground(new java.awt.Color(6, 161, 196));
+        btnEntrar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEntrar.setText("Entrar");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarActionPerformed(evt);
+            }
+        });
+
+        btnCadastrar.setBackground(new java.awt.Color(6, 161, 196));
+        btnCadastrar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnCadastrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCadastrar.setText("Cadastrar");
+        btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCadastrarActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(6, 161, 196));
+        jLabel5.setText("Esqueci minha senha?");
+
+        jLabelGifPaginaInicial.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelGifPaginaInicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/gifs/gif-abertura.gif"))); // NOI18N
+
+        jPanelTopoPaginaInicial.setBackground(new java.awt.Color(6, 161, 196));
+
+        lbTopoPaginaInicial.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbTopoPaginaInicial.setForeground(new java.awt.Color(255, 255, 255));
+        lbTopoPaginaInicial.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbTopoPaginaInicial.setText("Bom Dia, Nome.");
+
+        jLabelTopoPaginaInicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/logos/logo-topo.png"))); // NOI18N
+
+        jLabelImgTopoPaginaInicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/logos/topo_escrevendo.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanelTopoPaginaInicialLayout = new javax.swing.GroupLayout(jPanelTopoPaginaInicial);
+        jPanelTopoPaginaInicial.setLayout(jPanelTopoPaginaInicialLayout);
+        jPanelTopoPaginaInicialLayout.setHorizontalGroup(
+            jPanelTopoPaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTopoPaginaInicialLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelTopoPaginaInicial)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
+                .addGap(28, 28, 28)
+                .addComponent(jLabelImgTopoPaginaInicial)
+                .addGap(20, 20, 20))
+        );
+        jPanelTopoPaginaInicialLayout.setVerticalGroup(
+            jPanelTopoPaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelTopoPaginaInicialLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addGroup(jPanelTopoPaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelImgTopoPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelTopoPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanelTopoPaginaInicialLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(lbTopoPaginaInicial)))
+                .addContainerGap())
+        );
+
+        jPanelRodapePaginaInicial.setBackground(new java.awt.Color(6, 161, 196));
+
+        jLabelRodapePaginaInicial.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelRodapePaginaInicial.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelRodapePaginaInicial.setText("ABEP Educa. 2016");
+
+        javax.swing.GroupLayout jPanelRodapePaginaInicialLayout = new javax.swing.GroupLayout(jPanelRodapePaginaInicial);
+        jPanelRodapePaginaInicial.setLayout(jPanelRodapePaginaInicialLayout);
+        jPanelRodapePaginaInicialLayout.setHorizontalGroup(
+            jPanelRodapePaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRodapePaginaInicialLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelRodapePaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanelRodapePaginaInicialLayout.setVerticalGroup(
+            jPanelRodapePaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelRodapePaginaInicialLayout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jLabelRodapePaginaInicial)
+                .addGap(19, 19, 19))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnEntrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCadastrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5))
+                .addGap(19, 19, 19))
+            .addComponent(jPanelRodapePaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLabelGifPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 704, Short.MAX_VALUE)
+                    .addContainerGap()))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jPanelTopoPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnEntrar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnCadastrar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 436, Short.MAX_VALUE)
+                .addComponent(jPanelRodapePaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(40, 40, 40))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(187, 187, 187)
+                    .addComponent(jLabelGifPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(187, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
+        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
+        jInternalFrame1Layout.setHorizontalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jInternalFrame1Layout.setVerticalGroup(
+            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        desktopPane.add(jInternalFrame1);
+        jInternalFrame1.setBounds(0, 0, 740, 720);
+        try {
+            jInternalFrame1.setMaximum(true);
+        } catch (java.beans.PropertyVetoException e1) {
+            e1.printStackTrace();
+        }
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,12 +211,35 @@ public class MenuView extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 563, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(desktopPane, javax.swing.GroupLayout.PREFERRED_SIZE, 716, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
+        Cadastro mostrarCadastro = new Cadastro();
+        desktopPane.add(mostrarCadastro);
+        mostrarCadastro.show();
+         try {
+             mostrarCadastro.setMaximum(true);
+                } catch (PropertyVetoException ex) {
+        }
+
+    }//GEN-LAST:event_btnCadastrarActionPerformed
+
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        Login mostrarLogin = new Login();
+        desktopPane.add(mostrarLogin);
+        mostrarLogin.show();
+         try {
+             mostrarLogin.setMaximum(true);
+                } catch (PropertyVetoException ex) {
+        }
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -111,7 +278,19 @@ public class MenuView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCadastrar;
+    private javax.swing.JButton btnEntrar;
     private javax.swing.JDesktopPane desktopPane;
+    private javax.swing.JInternalFrame jInternalFrame1;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabelGifPaginaInicial;
+    private javax.swing.JLabel jLabelImgTopoPaginaInicial;
+    private javax.swing.JLabel jLabelRodapePaginaInicial;
+    private javax.swing.JLabel jLabelTopoPaginaInicial;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanelRodapePaginaInicial;
+    private javax.swing.JPanel jPanelTopoPaginaInicial;
+    private javax.swing.JLabel lbTopoPaginaInicial;
     // End of variables declaration//GEN-END:variables
 
 }
