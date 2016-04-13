@@ -27,202 +27,224 @@ public class Login extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel3 = new javax.swing.JPanel();
+        jPanelTopoPaginaInicial = new javax.swing.JPanel();
+        lbTopoPaginaInicial = new javax.swing.JLabel();
+        jLabelTopoPaginaInicial = new javax.swing.JLabel();
+        jLabelImgTopoPaginaInicial = new javax.swing.JLabel();
+        jPanelRodapePaginaInicial = new javax.swing.JPanel();
+        jLabelRodapePaginaInicial = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jPanelTopoLogin = new javax.swing.JPanel();
-        lbTopoLogin = new javax.swing.JLabel();
-        jLabelTopoLogin = new javax.swing.JLabel();
-        jLabelImgTopoLogin = new javax.swing.JLabel();
-        jPanelRodapeLogin = new javax.swing.JPanel();
-        jLabelRodapeLogin = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jPanelBlocoLogin = new javax.swing.JPanel();
         jLabelLogin = new javax.swing.JLabel();
-        jLabelSenha = new javax.swing.JLabel();
+        jLabelLogin1 = new javax.swing.JLabel();
         txtLogin = new javax.swing.JTextField();
-        jPasswordSenha = new javax.swing.JPasswordField();
-        btnLoginEntrar = new javax.swing.JButton();
-        jLabel1LoginChapeuFormatura = new javax.swing.JLabel();
-        jLabel2LoginDiplomaFormatura = new javax.swing.JLabel();
+        txtSenha = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
         setMaximizable(true);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanelTopoLogin.setBackground(new java.awt.Color(6, 161, 196));
+        jPanelTopoPaginaInicial.setBackground(new java.awt.Color(6, 161, 196));
 
-        lbTopoLogin.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lbTopoLogin.setForeground(new java.awt.Color(255, 255, 255));
-        lbTopoLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbTopoLogin.setText("Bom Dia, Nome.");
+        lbTopoPaginaInicial.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbTopoPaginaInicial.setForeground(new java.awt.Color(255, 255, 255));
+        lbTopoPaginaInicial.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbTopoPaginaInicial.setText("Bom Dia, Nome.");
 
-        jLabelTopoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/logos/logo-topo.png"))); // NOI18N
+        jLabelTopoPaginaInicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/logos/logo-topo.png"))); // NOI18N
 
-        jLabelImgTopoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/logos/topo_escrevendo.png"))); // NOI18N
+        jLabelImgTopoPaginaInicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/logos/topo_escrevendo.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanelTopoLoginLayout = new javax.swing.GroupLayout(jPanelTopoLogin);
-        jPanelTopoLogin.setLayout(jPanelTopoLoginLayout);
-        jPanelTopoLoginLayout.setHorizontalGroup(
-            jPanelTopoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelTopoLoginLayout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelTopoPaginaInicialLayout = new javax.swing.GroupLayout(jPanelTopoPaginaInicial);
+        jPanelTopoPaginaInicial.setLayout(jPanelTopoPaginaInicialLayout);
+        jPanelTopoPaginaInicialLayout.setHorizontalGroup(
+            jPanelTopoPaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelTopoPaginaInicialLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabelTopoLogin)
+                .addComponent(jLabelTopoPaginaInicial)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbTopoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(28, 28, 28)
-                .addComponent(jLabelImgTopoLogin)
+                .addComponent(jLabelImgTopoPaginaInicial)
                 .addGap(20, 20, 20))
         );
-        jPanelTopoLoginLayout.setVerticalGroup(
-            jPanelTopoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelTopoLoginLayout.createSequentialGroup()
-                .addGroup(jPanelTopoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelTopoLoginLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanelTopoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabelImgTopoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelTopoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanelTopoLoginLayout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(lbTopoLogin)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanelRodapeLogin.setBackground(new java.awt.Color(6, 161, 196));
-
-        jLabelRodapeLogin.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabelRodapeLogin.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelRodapeLogin.setText("ABEP Educa. 2016");
-
-        javax.swing.GroupLayout jPanelRodapeLoginLayout = new javax.swing.GroupLayout(jPanelRodapeLogin);
-        jPanelRodapeLogin.setLayout(jPanelRodapeLoginLayout);
-        jPanelRodapeLoginLayout.setHorizontalGroup(
-            jPanelRodapeLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelRodapeLoginLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabelRodapeLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanelRodapeLoginLayout.setVerticalGroup(
-            jPanelRodapeLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelRodapeLoginLayout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(jLabelRodapeLogin)
+        jPanelTopoPaginaInicialLayout.setVerticalGroup(
+            jPanelTopoPaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelTopoPaginaInicialLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addGroup(jPanelTopoPaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabelImgTopoPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelTopoPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanelTopoPaginaInicialLayout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(lbTopoPaginaInicial)))
                 .addContainerGap())
         );
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(6, 161, 196))); // NOI18N
+        jPanelRodapePaginaInicial.setBackground(new java.awt.Color(6, 161, 196));
+
+        jLabelRodapePaginaInicial.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabelRodapePaginaInicial.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelRodapePaginaInicial.setText("ABEP Educa. 2016");
+
+        javax.swing.GroupLayout jPanelRodapePaginaInicialLayout = new javax.swing.GroupLayout(jPanelRodapePaginaInicial);
+        jPanelRodapePaginaInicial.setLayout(jPanelRodapePaginaInicialLayout);
+        jPanelRodapePaginaInicialLayout.setHorizontalGroup(
+            jPanelRodapePaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRodapePaginaInicialLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelRodapePaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanelRodapePaginaInicialLayout.setVerticalGroup(
+            jPanelRodapePaginaInicialLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelRodapePaginaInicialLayout.createSequentialGroup()
+                .addContainerGap(21, Short.MAX_VALUE)
+                .addComponent(jLabelRodapePaginaInicial)
+                .addGap(19, 19, 19))
+        );
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/1LoginChapeuFormatura.png"))); // NOI18N
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/2LoginDiplomaFormatura.png"))); // NOI18N
+
+        jPanelBlocoLogin.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelBlocoLogin.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(6, 161, 196))); // NOI18N
 
         jLabelLogin.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabelLogin.setForeground(new java.awt.Color(6, 161, 196));
-        jLabelLogin.setText("Login");
+        jLabelLogin.setText("LOGIN");
 
-        jLabelSenha.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabelSenha.setForeground(new java.awt.Color(6, 161, 196));
-        jLabelSenha.setText("Senha");
+        jLabelLogin1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabelLogin1.setForeground(new java.awt.Color(6, 161, 196));
+        jLabelLogin1.setText("SENHA");
 
-        jPasswordSenha.setText("jPasswordField1");
+        txtSenha.setText("jPasswordField1");
 
-        btnLoginEntrar.setBackground(new java.awt.Color(6, 161, 196));
-        btnLoginEntrar.setForeground(new java.awt.Color(255, 255, 255));
-        btnLoginEntrar.setText("Entrar");
+        jButton1.setBackground(new java.awt.Color(6, 161, 196));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setText("Entrar");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnLoginEntrar)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabelSenha)
-                            .addComponent(jLabelLogin))
+        javax.swing.GroupLayout jPanelBlocoLoginLayout = new javax.swing.GroupLayout(jPanelBlocoLogin);
+        jPanelBlocoLogin.setLayout(jPanelBlocoLoginLayout);
+        jPanelBlocoLoginLayout.setHorizontalGroup(
+            jPanelBlocoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelBlocoLoginLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelBlocoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBlocoLoginLayout.createSequentialGroup()
+                        .addComponent(jLabelLogin1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtLogin)
-                            .addComponent(jPasswordSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE))))
-                .addContainerGap(49, Short.MAX_VALUE))
+                        .addComponent(txtSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 381, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBlocoLoginLayout.createSequentialGroup()
+                        .addComponent(jLabelLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtLogin))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBlocoLoginLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(46, 46, 46)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jPanelBlocoLoginLayout.setVerticalGroup(
+            jPanelBlocoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelBlocoLoginLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanelBlocoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelLogin)
                     .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabelSenha)
-                    .addComponent(jPasswordSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btnLoginEntrar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(31, 31, 31)
+                .addGroup(jPanelBlocoLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelLogin1)
+                    .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton1)
+                .addGap(57, 57, 57))
         );
-
-        jLabel1LoginChapeuFormatura.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1LoginChapeuFormatura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/1LoginChapeuFormatura.png"))); // NOI18N
-
-        jLabel2LoginDiplomaFormatura.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2LoginDiplomaFormatura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/2LoginDiplomaFormatura.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelTopoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanelRodapeLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1LoginChapeuFormatura, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2LoginDiplomaFormatura, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                .addGap(15, 15, 15)
+                .addComponent(jPanelBlocoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 255, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jPanelTopoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1LoginChapeuFormatura, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2LoginDiplomaFormatura, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(46, 46, 46)
-                .addComponent(jPanelRodapeLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanelBlocoLogin, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelRodapePaginaInicial, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jPanelTopoPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(132, 132, 132)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
+                .addComponent(jPanelRodapePaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setBounds(0, 0, 1004, 660);
+        setBounds(0, 0, 1046, 699);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnLoginEntrar;
-    private javax.swing.JLabel jLabel1LoginChapeuFormatura;
-    private javax.swing.JLabel jLabel2LoginDiplomaFormatura;
-    private javax.swing.JLabel jLabelImgTopoLogin;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabelImgTopoPaginaInicial;
     private javax.swing.JLabel jLabelLogin;
-    private javax.swing.JLabel jLabelRodapeLogin;
-    private javax.swing.JLabel jLabelSenha;
-    private javax.swing.JLabel jLabelTopoLogin;
+    private javax.swing.JLabel jLabelLogin1;
+    private javax.swing.JLabel jLabelRodapePaginaInicial;
+    private javax.swing.JLabel jLabelTopoPaginaInicial;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanelRodapeLogin;
-    private javax.swing.JPanel jPanelTopoLogin;
-    private javax.swing.JPasswordField jPasswordSenha;
-    private javax.swing.JLabel lbTopoLogin;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanelBlocoLogin;
+    private javax.swing.JPanel jPanelRodapePaginaInicial;
+    private javax.swing.JPanel jPanelTopoPaginaInicial;
+    private javax.swing.JLabel lbTopoPaginaInicial;
     private javax.swing.JTextField txtLogin;
+    private javax.swing.JPasswordField txtSenha;
     // End of variables declaration//GEN-END:variables
 }

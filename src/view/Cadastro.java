@@ -37,8 +37,6 @@ public class Cadastro extends javax.swing.JInternalFrame {
         jPanel7 = new javax.swing.JPanel();
         lbCadNome = new javax.swing.JLabel();
         txtCadNome = new javax.swing.JTextField();
-        txtCadSobrenome = new javax.swing.JTextField();
-        lbCadSobrenome = new javax.swing.JLabel();
         lbCadEmail = new javax.swing.JLabel();
         txtCadEmail = new javax.swing.JTextField();
         lbCadCurso = new javax.swing.JLabel();
@@ -132,12 +130,6 @@ public class Cadastro extends javax.swing.JInternalFrame {
 
         txtCadNome.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(6, 161, 196), 1, true));
 
-        txtCadSobrenome.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(6, 161, 196), 1, true));
-
-        lbCadSobrenome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        lbCadSobrenome.setForeground(new java.awt.Color(6, 161, 196));
-        lbCadSobrenome.setText("Sobrenome");
-
         lbCadEmail.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbCadEmail.setForeground(new java.awt.Color(6, 161, 196));
         lbCadEmail.setText("Email");
@@ -197,10 +189,6 @@ public class Cadastro extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtCadNome))
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(lbCadSobrenome)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtCadSobrenome))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(lbCadEmail)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtCadEmail))
@@ -233,39 +221,35 @@ public class Cadastro extends javax.swing.JInternalFrame {
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addGap(73, 73, 73)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbCadNome)
                     .addComponent(txtCadNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbCadSobrenome)
-                    .addComponent(txtCadSobrenome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(40, 40, 40)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbCadEmail)
                     .addComponent(txtCadEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(33, 33, 33)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbCadCurso)
                     .addComponent(jComboBoxCadCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(35, 35, 35)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbCadFaculdade)
                     .addComponent(jComboBoxCadFaculdade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lbCadPeriodo)
                     .addComponent(jComboBoxCadPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(33, 33, 33)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbCadRAaluno)
                     .addComponent(txtCadRAaluno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1)
                     .addComponent(lbCadNumInscProf)
                     .addComponent(txtCadNumInscProf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43)
+                .addGap(31, 31, 31)
                 .addComponent(btnCadastrar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(65, 65, 65))
         );
 
         jLabeCadCorujaMudando.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -279,9 +263,9 @@ public class Cadastro extends javax.swing.JInternalFrame {
             .addComponent(jPanelRodapeCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabeCadCorujaMudando, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabeCadCorujaMudando, javax.swing.GroupLayout.DEFAULT_SIZE, 506, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -307,7 +291,7 @@ public class Cadastro extends javax.swing.JInternalFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        setBounds(0, 0, 1098, 620);
+        setBounds(0, 0, 1202, 620);
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -332,12 +316,10 @@ public class Cadastro extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lbCadNumInscProf;
     private javax.swing.JLabel lbCadPeriodo;
     private javax.swing.JLabel lbCadRAaluno;
-    private javax.swing.JLabel lbCadSobrenome;
     private javax.swing.JLabel lbTopoCadastro;
     private javax.swing.JTextField txtCadEmail;
     private javax.swing.JTextField txtCadNome;
     private javax.swing.JTextField txtCadNumInscProf;
     private javax.swing.JTextField txtCadRAaluno;
-    private javax.swing.JTextField txtCadSobrenome;
     // End of variables declaration//GEN-END:variables
 }
