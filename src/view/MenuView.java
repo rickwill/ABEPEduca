@@ -39,7 +39,6 @@ public class MenuView extends javax.swing.JFrame {
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jPanel1 = new javax.swing.JPanel();
         btnEntrar = new javax.swing.JButton();
-        btnCadastrar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabelGifPaginaInicial = new javax.swing.JLabel();
         jPanelTopoPaginaInicial = new javax.swing.JPanel();
@@ -48,6 +47,7 @@ public class MenuView extends javax.swing.JFrame {
         jLabelImgTopoPaginaInicial = new javax.swing.JLabel();
         jPanelRodapePaginaInicial = new javax.swing.JPanel();
         jLabelRodapePaginaInicial = new javax.swing.JLabel();
+        btnEntrar1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -66,19 +66,14 @@ public class MenuView extends javax.swing.JFrame {
             }
         });
 
-        btnCadastrar.setBackground(new java.awt.Color(6, 161, 196));
-        btnCadastrar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btnCadastrar.setForeground(new java.awt.Color(255, 255, 255));
-        btnCadastrar.setText("Cadastrar");
-        btnCadastrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCadastrarActionPerformed(evt);
-            }
-        });
-
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(6, 161, 196));
         jLabel5.setText("Esqueci minha senha?");
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
 
         jLabelGifPaginaInicial.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelGifPaginaInicial.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/gifs/gif-abertura.gif"))); // NOI18N
@@ -102,7 +97,7 @@ public class MenuView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabelTopoPaginaInicial)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE)
+                .addComponent(lbTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
                 .addGap(28, 28, 28)
                 .addComponent(jLabelImgTopoPaginaInicial)
                 .addGap(20, 20, 20))
@@ -143,6 +138,16 @@ public class MenuView extends javax.swing.JFrame {
                 .addGap(19, 19, 19))
         );
 
+        btnEntrar1.setBackground(new java.awt.Color(6, 161, 196));
+        btnEntrar1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnEntrar1.setForeground(new java.awt.Color(255, 255, 255));
+        btnEntrar1.setText("Teste");
+        btnEntrar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrar1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -150,9 +155,10 @@ public class MenuView extends javax.swing.JFrame {
             .addComponent(jPanelTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnEntrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnEntrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCadastrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel5))
                 .addGap(19, 19, 19))
             .addComponent(jPanelRodapePaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -167,12 +173,12 @@ public class MenuView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jPanelTopoPaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(btnEntrar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnCadastrar)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnEntrar)
+                    .addComponent(btnEntrar1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 436, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 465, Short.MAX_VALUE)
                 .addComponent(jPanelRodapePaginaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(40, 40, 40))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -220,17 +226,6 @@ public class MenuView extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
-        Cadastro mostrarCadastro = new Cadastro();
-        desktopPane.add(mostrarCadastro);
-        mostrarCadastro.show();
-         try {
-             mostrarCadastro.setMaximum(true);
-                } catch (PropertyVetoException ex) {
-        }
-
-    }//GEN-LAST:event_btnCadastrarActionPerformed
-
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         Login mostrarLogin = new Login();
         desktopPane.add(mostrarLogin);
@@ -240,6 +235,22 @@ public class MenuView extends javax.swing.JFrame {
                 } catch (PropertyVetoException ex) {
         }
     }//GEN-LAST:event_btnEntrarActionPerformed
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        // TODO add your handling code here:
+        //Colocar igual a chamada de qualquer outra tela, como por exemplo a de login 
+        //Tentar colocar mouse hover também, pra colocar underline quando passar o mouse p parecer link
+    }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void btnEntrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrar1ActionPerformed
+        FeedAdministrador mostrarFeedAdministrador = new FeedAdministrador();
+        desktopPane.add(mostrarFeedAdministrador);
+        mostrarFeedAdministrador.show();
+         try {
+             mostrarFeedAdministrador.setMaximum(true);
+                } catch (PropertyVetoException ex) {
+        }
+    }//GEN-LAST:event_btnEntrar1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -278,8 +289,8 @@ public class MenuView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCadastrar;
     private javax.swing.JButton btnEntrar;
+    private javax.swing.JButton btnEntrar1;
     private javax.swing.JDesktopPane desktopPane;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel5;

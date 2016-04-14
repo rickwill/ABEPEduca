@@ -130,6 +130,11 @@ public class Login extends javax.swing.JInternalFrame {
         jLabelLogin1.setText("SENHA");
 
         txtSenha.setText("jPasswordField1");
+        txtSenha.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtSenhaMouseClicked(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(6, 161, 196));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -227,6 +232,10 @@ public class Login extends javax.swing.JInternalFrame {
 
         setBounds(0, 0, 1046, 699);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtSenhaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtSenhaMouseClicked
+        txtSenha.setText("");
+    }//GEN-LAST:event_txtSenhaMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

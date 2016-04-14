@@ -170,6 +170,7 @@ public class Cadastro extends javax.swing.JInternalFrame {
         txtCadNumInscProf.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(6, 161, 196), 1, true));
 
         btnCadastrar.setBackground(new java.awt.Color(6, 161, 196));
+        btnCadastrar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnCadastrar.setForeground(new java.awt.Color(255, 255, 255));
         btnCadastrar.setText("Cadastrar");
 
