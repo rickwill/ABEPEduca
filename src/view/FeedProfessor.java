@@ -595,7 +595,15 @@ public class FeedProfessor extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void textAreaQualSuaDuvidaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_textAreaQualSuaDuvidaMouseClicked
-        textAreaQualSuaDuvida.setText("");
+
+        if(textAreaQualSuaDuvida.getText().equals("Qual sua dúvida?")) {
+            textAreaQualSuaDuvida.setText("");
+            repaint();
+            revalidate();
+        }
+        
+        textAreaQualSuaDuvida.setEditable(true);        
+  
     }//GEN-LAST:event_textAreaQualSuaDuvidaMouseClicked
 
 

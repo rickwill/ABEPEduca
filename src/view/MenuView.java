@@ -97,7 +97,7 @@ public class MenuView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabelTopoPaginaInicial)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
+                .addComponent(lbTopoPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 414, Short.MAX_VALUE)
                 .addGap(28, 28, 28)
                 .addComponent(jLabelImgTopoPaginaInicial)
                 .addGap(20, 20, 20))
@@ -165,7 +165,7 @@ public class MenuView extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jLabelGifPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 704, Short.MAX_VALUE)
+                    .addComponent(jLabelGifPaginaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 675, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         jPanel1Layout.setVerticalGroup(
@@ -192,7 +192,9 @@ public class MenuView extends javax.swing.JFrame {
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
         jInternalFrame1Layout.setHorizontalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                .addGap(0, 29, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jInternalFrame1Layout.setVerticalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -243,6 +245,14 @@ public class MenuView extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel5MouseClicked
 
     private void btnEntrar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrar1ActionPerformed
+//        FeedProfessor mostrarFeedProfessor = new FeedProfessor();
+//        desktopPane.add(mostrarFeedProfessor);
+//        mostrarFeedProfessor.show();
+//         try {
+//             mostrarFeedProfessor.setMaximum(true);
+//                } catch (PropertyVetoException ex) {
+//        }
+
         FeedAdministrador mostrarFeedAdministrador = new FeedAdministrador();
         desktopPane.add(mostrarFeedAdministrador);
         mostrarFeedAdministrador.show();

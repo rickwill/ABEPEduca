@@ -198,9 +198,11 @@ public class FeedAdministrador extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void labelMenuFeedADMInicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMenuFeedADMInicioMouseClicked
+        MenuView mostrarMenuView = new MenuView();
         
         FeedAdministrador mostrarFeedAdministrador = new FeedAdministrador();
         jDesktopPane1.add(mostrarFeedAdministrador);
+        //mostrarFeedAdministrador.setVisible(false);
         mostrarFeedAdministrador.show();
          try {
              mostrarFeedAdministrador.setMaximum(true);
